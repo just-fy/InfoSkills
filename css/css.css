@@ -9,7 +9,7 @@
 header {
     width: 1920px;
     height: 110px;
-    background: #efece7 url("images/logo.png") no-repeat center;
+    background: #efece7 url("../images/logo.png") no-repeat center;
 }
 ul.nav-left {
     margin: 45px 0 0 159px;
@@ -43,15 +43,15 @@ ul.nav-right li:last-child {
 }
 li#sign-in {
     padding-left: 17px;
-    background: url("images/sign-in.png") no-repeat left;
+    background: url("../images/sign-in.png") no-repeat left;
 }
 li#basket {
     padding-left: 24px;
-    background: url("images/basket.png") no-repeat left;
+    background: url("../images/basket.png") no-repeat left;
 }
 li#bookmarks {
     padding-left: 17px;
-    background: url("images/bookmarks.png") no-repeat left;
+    background: url("../images/bookmarks.png") no-repeat left;
 }
 #bookmarks a {
     border: 0;
@@ -61,7 +61,7 @@ li#bookmarks {
     content: "";
     height: 11px;
     width: 8px;
-    background: url("images/sign-in.png")  ;
+    background: url("../images/sign-in.png")  ;
     z-index: 20;
 }
 form#form {

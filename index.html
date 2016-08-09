@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoSkills</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+<header>
+    <ul class="nav-left">
+        <li>
+            <nav id="top-menu"><div id="nav-btn"></div>Меню
+            </nav>
+        </li>
+        <li>
+            <form id="form" class="search" name="poisk" method="get" action="/search">
+                <input type="submit" value="     " style="background: url(images/button-search.png) no-repeat" />
+                <input type="text" value="Поиск"
+                       onfocus="this.value=this.value=='Поиск'?'':this.value;"
+                       onblur="this.value=this.value==''?'Поиск':this.value;" name="search">
+            </form>
+        </li>
+    </ul>
+    <ul class="nav-right">
+        <li id="sign-in"><a href="#">Войти на сайт</a></li>
+        <li id="basket"><a href="#">Корзина</a></li>
+        <li id="bookmarks"><a href="#">Закладки</a></li>
+    </ul>
+</header>
+</div>
+</body>
+</html>

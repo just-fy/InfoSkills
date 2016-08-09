@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+header {
+    width: 1920px;
+    height: 110px;
+    background: #efece7 url("images/logo.png") no-repeat center;
+}
+ul.nav-left {
+    margin: 45px 0 0 159px;
+}
+ul.nav-right {
+    float: right;
+    margin: 43px 128px 0 0;
+}
+ul.nav-left, ul.nav-right {
+    display: inline-block;
+}
+ul.nav-left li, ul.nav-right li {
+    display: inline-block;
+}
+ul.nav-left li {
+    text-transform: uppercase;
+    font: 700 13px/20px 'PT Sans', arial;
+    color: #000000;
+}
+ul.nav-right li a{
+    text-decoration: none;
+    font: bold 13px/22px 'PT Sans', arial;
+    color: #000000;
+    border-right: 1px solid #cccccc;
+    height: 20px;
+    margin-right: 12px;
+    padding-right: 11px;
+}
+ul.nav-right li:last-child {
+    border: 0;
+}
+li#sign-in {
+    padding-left: 17px;
+    background: url("images/sign-in.png") no-repeat left;
+}
+li#basket {
+    padding-left: 24px;
+    background: url("images/basket.png") no-repeat left;
+}
+li#bookmarks {
+    padding-left: 17px;
+    background: url("images/bookmarks.png") no-repeat left;
+}
+#bookmarks a {
+    border: 0;
+}
+
+#sign-in a:before {
+    content: "";
+    height: 11px;
+    width: 8px;
+    background: url("images/sign-in.png")  ;
+    z-index: 20;
+}
+form#form {
+    outline: none;
+    margin-left: 25px;
+}
+#form input {
+    text-transform: uppercase;
+    font: 700 13px/20px 'PT Sans', arial;
+    color: #000000;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+#form input[type="text"]:focus {
+    outline: none;
+}
+#nav-btn{
+    display: inline-block;
+    border-bottom: 7px double black;
+    border-top: 2px solid black;
+    content: "";
+    height: 3px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+
+
+

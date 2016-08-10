@@ -182,5 +182,21 @@ form#form {
 .controls {
     z-index: 100;
 }
-
+/*стили для второго меню*/
+.second-menu {
+    margin: 50px 0 0 110px;
+}
+ul.second-menu li {
+    display: inline-block;
+}
+ul.second-menu li a {
+    text-decoration: none;
+    padding-left: 45px;
+    font-family: 'PTSans', Arial;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+}
 

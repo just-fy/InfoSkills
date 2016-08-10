@@ -92,100 +92,41 @@ form#form {
     margin-right: 10px;
 }
 /*Стили для слайдера*/
-.slide_block {
-    background: #eb3d01;
+div#myCarousel.carousel.slide {
+    background:  #eb3d01;
+    text-align: center;
     width: 1920px;
-    height: 300px;
 }
-.slides {
-    height: 300px;
-    opacity: 0;
-    position: absolute;
-    left: 575px;
-    width: 750px;
-    z-index: 0;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-}
-.slide1 {
-    background: url(../images/slider-image.png);
-}
-
-.slide2 {
-    background-image: url(../images/slider-image2.png);
-}
-div.slides.slide2 {
-    height: 300px;
-    width: 750px;
-}
-
-.slide3 {
-    background-image: url(../images/slider-image3.png);
-}
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3 {
-    opacity: 1;
-    z-index: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-}
-.slide_block > input {
-    display: none;
-}
-
-.slide_block .controls {
+/*
+.carousel{
     position: relative;
-    top: 289px;
-    left: 915px;
+    margin-top: 20px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    list-style: none;
+}
+.carousel-indicators li {
+    margin: 5px;
     display: inline-block;
-}
-
-.slide_block label {
-    cursor: pointer;
-    display: inline-block;
-    margin: 20px 0 0 16px;
-    -webkit-transition: background ease-in-out .5s;
-    -moz-transition: background ease-in-out .5s;
-    -o-transition: background ease-in-out .5s;
-    transition: background ease-in-out .5s;
-}
-.slide_block label:hover,
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3) {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background: #00c4e0;
-
-}
-
-.slide_block label:after {
-    border: 1px solid #cccccc;
-    background: #cccccc;
-    content: " ";
-    display: block;
-    height: 8px;
     width: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+.carousel-indicators .active {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    background: #00c4e0;
 }
 
-.controls {
-    z-index: 100;
-}
+/*
 /*стили для второго меню*/
 #middle-menu {
     z-index: 150;

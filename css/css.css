@@ -120,6 +120,10 @@ form#form {
 .slide2 {
     background-image: url(../images/slider-image2.png);
 }
+div.slides.slide2 {
+    height: 300px;
+    width: 750px;
+}
 
 .slide3 {
     background-image: url(../images/slider-image3.png);
@@ -183,20 +187,30 @@ form#form {
     z-index: 100;
 }
 /*стили для второго меню*/
+#middle-menu {
+    z-index: 150;
+}
 .second-menu {
-    margin: 50px 0 0 110px;
+    margin: 50px 0 0 140px;
 }
 ul.second-menu li {
     display: inline-block;
 }
 ul.second-menu li a {
     text-decoration: none;
-    padding-left: 45px;
+    padding: 20px;
     font-family: 'PTSans', Arial;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
+
+}
+.second-menu a:hover {
+    background-color: #e9e9e7;
+    width: 118px;
+    height: 51px;
+    color: #666666;
 }
 

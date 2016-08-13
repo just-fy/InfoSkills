@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>InfoSkills</title>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-    <script type="text/javascript" src="js/slider.js"></script>
 </head>
 <body>
 <div class="container">
@@ -34,9 +34,6 @@
             <li id="bookmarks"><a href="#">Закладки</a></li>
         </ul>
     </header>
-    <script>
-        $('#myCarousel').carousel('myCarousel');
-    </script>
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
         <!-- Индикаторы для карусели -->
         <ol class="carousel-indicators">
@@ -49,17 +46,17 @@
         </ol>
         <!-- Слайды карусели -->
         <div class="carousel-inner">
-            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-            <div class="active item">
+            <!--Слайд первый-->
+            <div class="item active">
                 <img src="images/slider-image.png" alt="slider-image">
             </div>
-            <!-- Слайд №2 -->
+            <!--Слайд второй-->
             <div class="item">
                 <img src="images/slider-image2.png" alt="slider-image">
             </div>
-            <!-- Слайд №3 -->
+            <!--Слайд третий-->
             <div class="item">
-                <img src="images/slider-image3.png" alt="">
+                <img src="images/slider-image3.png" alt="slider-image">
             </div>
         </div>
         <!-- Навигация для карусели -->
@@ -72,7 +69,6 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
-
     <nav id="middle-menu">
         <ul class="second-menu">
             <li><a href="#">Все товары</a></li>
@@ -84,6 +80,9 @@
             <li><a href="#">Информация</a></li>
         </ul>
     </nav>
+    <div class="products">
+        <img src="images/my-pokupaem.png" alt="">
+    </div>
 </div>
 </body>
 </html>

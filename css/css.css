@@ -84,71 +84,54 @@ form#form {
 }
 #nav-btn{
     display: inline-block;
-    border-bottom: 7px double black;
-    border-top: 2px solid black;
-    content: "";
-    height: 3px;
-    width: 16px;
+    content: url("../images/button-menu.png");
     margin-right: 10px;
+    cursor: pointer;
 }
 /*Стили для слайдера*/
-div#myCarousel.carousel.slide {
+
+.item {
     background:  #eb3d01;
     text-align: center;
-    width: 1920px;
+    height: 300px !important;
 }
-/*
-.carousel{
-    position: relative;
-    margin-top: 20px;
+.item img {
+    display: block;
+    margin: 0 auto;
 }
-.carousel-indicators {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    list-style: none;
-}
-.carousel-indicators li {
-    margin: 5px;
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #cccccc;
-}
-.carousel-indicators .active {
-    width: 8px;
-    height: 8px;
-    margin: 5px;
-    background: #00c4e0;
+.carousel-indicators li:hover {
+    background-color: #00c4e0;
 }
 
-/*
 /*стили для второго меню*/
 #middle-menu {
     z-index: 150;
 }
 .second-menu {
-    margin: 50px 0 0 140px;
+    margin: 65px 0 0 140px;
 }
 ul.second-menu li {
     display: inline-block;
 }
-ul.second-menu li a {
-    text-decoration: none;
-    padding: 20px;
+ul.second-menu a {
+
+    margin: 20px;
     font-family: 'PTSans', Arial;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
-
+}
+.second-menu a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
 }
 .second-menu a:hover {
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+    border-bottom: none;
     background-color: #e9e9e7;
     width: 118px;
     height: 51px;

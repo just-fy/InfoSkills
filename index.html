@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css"/>
+    <script type="text/JavaScript">
+        $(document).ready(function () {
+            $('#gallery li').hover(
+                    function () {
+                        $('span', this).slideToggle('slow');
+                    },
+                    function () {
+                        $('span', this).slideToggle('slow');
+                    });
+        });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -81,7 +92,22 @@
         </ul>
     </nav>
     <div class="products">
-        <img src="images/my-pokupaem.png" alt="">
+        <ul id="gallery">
+            <li>
+                <img src="images/my-pokupaem.png" alt="">
+                <a href="#"><span>
+                    <h3>Взлом маркетинга</h3>
+                    Наука о том, почему мы покупаем
+                </span></a>
+            </li>
+            <li>
+                <div id="cap"></div>
+            </li>
+            <li><img src="images/programmnomu-obespecheniu.png" alt=""></li>
+            <li><img src="images/psihologiya-vliyaniya.png" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
     </div>
 </div>
 </body>

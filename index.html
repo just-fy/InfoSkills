@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css"/>
-    <!--<script type="text/JavaScript">
+    <script src="js/favorite.js"></script>
+    <script type="text/JavaScript">
         $(document).ready(function () {
-            $('#gallery li').hover(
+            $('.books th').hover(
                     function () {
-                        $('span', this).slideToggle('slow');
+                        $('div', this).slideToggle('slow');
                     },
                     function () {
-                        $('span', this).slideToggle('slow');
+                        $('div', this).slideToggle('slow');
                     });
         });
-    </script>-->
+    </script>
 </head>
 <body>
 <div class="container">
@@ -92,10 +93,17 @@
         </ul>
     </nav>
     <div class="products">
-        <table>
+        <table class="books">
             <tr>
                 <th colspan="2" rowspan="2">
                     <img src="images/book1.png" alt="book1">
+                    <div style="bottom: -297px">
+                        <h4>Взлом маркетинга.<br>Наука о том, почему мы покупаем</h4>
+                        <p id="price">449.99<span> руб</span></p>
+                        <a id="button-buy" href="#">Купить</a>
+                        <a id="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th colspan="2">
                     <img src="images/book2.png" alt="">
@@ -122,7 +130,9 @@
                 </th>
             </tr>
             <tr>
-                <th>15</th>
+                <th>
+                    <img src="images/book9.png" alt="">
+                </th>
                 <th>
                     <img src="images/book10.png" alt="">
                 </th>
@@ -136,7 +146,7 @@
         </table>
     </div>
     <div class="blue-block">
-
+        <a id="choose" href="#">Выбирайте</a>
     </div>
     <div class="products">
         <table>
@@ -158,9 +168,15 @@
                 <th colspan="2">
                     <img src="images/book12.png" alt="">
                 </th>
-                <th>10</th>
-                <th>11</th>
-                <th>12</th>
+                <th>
+                    <img src="images/book13.png" alt="">
+                </th>
+                <th>
+                    <img src="images/book14.png" alt="">
+                </th>
+                <th>
+                    <img src="images/book15.png" alt="">
+                </th>
             </tr>
         </table>
     </div>

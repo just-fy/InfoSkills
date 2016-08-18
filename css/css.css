@@ -152,26 +152,33 @@ th {
     width: 460px;
     height: 193px;
     position: absolute;
+    cursor: pointer;
 }
-.books div h4{
+.books div h4 a{
+    text-decoration: none;
+    display: block;
     text-align: left;
-    padding: 30px 0 0 39px;
+    padding: 30px 0 21px 39px;
     color: #ffffff;
     font: 700 15px/20px 'PTSans', arial;
 }
+.books div h4 a:hover {
+    cursor: pointer;
+    color: #00c4e0;;
+}
 .books div p {
     text-align: left;
-    margin: 23px 0 10px 39px;
+    margin: 0 0 17px 40px;
     color: #ffffff;
 }
 .books div span {
     color: #ffffff;
     font: 700 14px/20px 'PTSans', arial;
 }
-#price {
+.price {
     font-size: 20px;
 }
-#button-buy {
+.button-buy {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
@@ -183,26 +190,38 @@ th {
     margin-left: 30px;
     display: inline-block;
 }
-#button-buy:hover {
+.button-buy:hover {
+    text-decoration: none;
     background: #0cd4f1;
+    color: #000000;
 }
-#button-buy:active {
+.button-buy:active {
     background: #06a2b8;
+    text-decoration: none;
+    border-bottom: none;
+    color: #000000;
 }
-#bookmark {
+.bookmark {
     font: 13px/20px 'PTSans', Arial;
     color: #ffffff;
     text-decoration: none;
     border-bottom: 1px solid #6f6151;
     margin-right: 140px;
+    padding-left: 20px;
     position: relative;
     top: 10px;
-    background: url("../images/white-bookmark.png") no-repeat left;
+    background: url("../images/white-bookmark.png") no-repeat;
 }
-#bookmark:hover {
+.bookmark:hover {
+    text-decoration: none;
     border-bottom: none;
+    color: #ffffff;
 }
-
+.bookmark:active {
+    text-decoration: none;
+    border-bottom: none;
+    color: #ffffff;
+}
 /*Стили для синего блока*/
 .blue-block {
     width: 1920px;

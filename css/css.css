@@ -116,11 +116,8 @@ ul.second-menu li {
 ul.second-menu a {
 
     margin: 20px;
-    font-family: 'PTSans', Arial;
+    font: 700 14px/20px 'PTSans', arial;
     color: #000000;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
     text-align: left;
 }
 .second-menu a {
@@ -148,10 +145,84 @@ th {
     width: 220px;
     height: 320px;
 }
+/*Стили для всплывающих блоков у книг*/
+.books div {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 460px;
+    height: 193px;
+    position: absolute;
+}
+.books div h4{
+    text-align: left;
+    padding: 30px 0 0 39px;
+    color: #ffffff;
+    font: 700 15px/20px 'PTSans', arial;
+}
+.books div p {
+    text-align: left;
+    margin: 23px 0 10px 39px;
+    color: #ffffff;
+}
+.books div span {
+    color: #ffffff;
+    font: 700 14px/20px 'PTSans', arial;
+}
+#price {
+    font-size: 20px;
+}
+#button-buy {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font: 700 13px/20px 'PTSans', arial;
+    background: #00c4e0;
+    padding: 12px 44px;
+    outline: none;
+    float: left;
+    margin-left: 30px;
+    display: inline-block;
+}
+#button-buy:hover {
+    background: #0cd4f1;
+}
+#button-buy:active {
+    background: #06a2b8;
+}
+#bookmark {
+    font: 13px/20px 'PTSans', Arial;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #6f6151;
+    margin-right: 140px;
+    position: relative;
+    top: 10px;
+    background: url("../images/white-bookmark.png") no-repeat left;
+}
+#bookmark:hover {
+    border-bottom: none;
+}
+
 /*Стили для синего блока*/
 .blue-block {
-    background-color: #050c42;
     width: 1920px;
     height: 300px;
     margin-top: 40px;
+    background: url("../images/softclub.png") #050c42 no-repeat center;
+}
+#choose {
+    font: 400 16px 'PTSans', arial;
+    text-decoration: none;
+    position: relative;
+    left: 1125px;
+    top: 260px;
+    color: #62dcf4;
+}
+#choose::after {
+    content: '';
+    position: absolute;
+    left: 90px;
+    bottom: 4px;
+    border: 4px solid transparent;
+    border-left: 9px solid #62dcf4;
 }

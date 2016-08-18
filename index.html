@@ -9,17 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css"/>
     <script src="js/favorite.js"></script>
-    <script type="text/JavaScript">
-        $(document).ready(function () {
-            $('.books th').hover(
-                    function () {
-                        $('div', this).slideToggle('slow');
-                    },
-                    function () {
-                        $('div', this).slideToggle('slow');
-                    });
-        });
-    </script>
+    <script src="js/dropdown-box.js"></script>
 </head>
 <body>
 <div class="container">
@@ -98,15 +88,22 @@
                 <th colspan="2" rowspan="2">
                     <img src="images/book1.png" alt="book1">
                     <div style="bottom: -297px">
-                        <h4>Взлом маркетинга.<br>Наука о том, почему мы покупаем</h4>
-                        <p id="price">449.99<span> руб</span></p>
-                        <a id="button-buy" href="#">Купить</a>
-                        <a id="bookmark" href="#" rel="sidebar"
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
                            onclick="addBookmark()">В закладки</a>
                     </div>
                 </th>
                 <th colspan="2">
-                    <img src="images/book2.png" alt="">
+                    <img src="images/book2.png" alt="book2">
+                    <div style="bottom: 43px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th>
                     <img src="images/book3.png" alt="">
@@ -124,9 +121,23 @@
                 </th>
                 <th colspan="2">
                     <img src="images/book7.png" alt="">
+                    <div style="bottom: -297px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th colspan="2" rowspan="2">
                     <img src="images/book8.png" alt="">
+                    <div style="bottom: -637px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
             </tr>
             <tr>
@@ -141,6 +152,13 @@
                 </th>
                 <th colspan="2">
                     <img src="images/book12.png" alt="">
+                    <div style="bottom: -637px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
             </tr>
         </table>
@@ -149,24 +167,52 @@
         <a id="choose" href="#">Выбирайте</a>
     </div>
     <div class="products">
-        <table>
+        <table class="books">
             <tr>
                 <th colspan="2">
                     <img src="images/book7.png" alt="">
+                    <div style="bottom: -1357px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th>
                     <img src="images/book6.png" alt="">
                 </th>
                 <th colspan="2">
                     <img src="images/book2.png" alt="">
+                    <div style="bottom: -1357px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th colspan="2" rowspan="2">
                     <img src="images/book1.png" alt="">
+                    <div style="bottom: -1697px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
             </tr>
             <tr>
                 <th colspan="2">
                     <img src="images/book12.png" alt="">
+                    <div style="bottom: -1697px;">
+                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                        <p class="price">449.99<span> руб</span></p>
+                        <a class="button-buy" href="#">Купить</a>
+                        <a class="bookmark" href="#" rel="sidebar"
+                           onclick="addBookmark()">В закладки</a>
+                    </div>
                 </th>
                 <th>
                     <img src="images/book13.png" alt="">

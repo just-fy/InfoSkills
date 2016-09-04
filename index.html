@@ -9,223 +9,277 @@
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="http://allfont.ru/allfont.css?fonts=pt-sans" rel="stylesheet" type="text/css"/>
     <script src="js/favorite.js"></script>
-    <script src="js/dropdown-box.js"></script>
+    <!--<script src="js/dropdown-box.js"></script>-->
 </head>
 <body>
-<div class="container">
-    <header>
-        <ul class="nav-left">
-            <li>
-                <nav id="top-menu">
-                    <div id="nav-btn"></div>
-                    Меню
-                </nav>
-            </li>
-            <li>
-                <form id="form" class="search" name="poisk" method="get" action="/search">
-                    <input type="submit" value="     " style="background: url(images/button-search.png) no-repeat"/>
-                    <input type="text" value="Поиск"
-                           onfocus="this.value=this.value=='Поиск'?'':this.value;"
-                           onblur="this.value=this.value==''?'Поиск':this.value;" name="search">
-                </form>
-            </li>
-        </ul>
-        <ul class="nav-right">
-            <li id="sign-in"><a href="#">Войти на сайт</a></li>
-            <li id="basket"><a href="#">Корзина</a></li>
-            <li id="bookmarks"><a href="#">Закладки</a></li>
-        </ul>
-    </header>
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-        <!-- Индикаторы для карусели -->
-        <ol class="carousel-indicators">
-            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Слайды карусели -->
-        <div class="carousel-inner">
-            <!--Слайд первый-->
-            <div class="item active">
-                <img src="images/slider-image.png" alt="slider-image">
-            </div>
-            <!--Слайд второй-->
-            <div class="item">
-                <img src="images/slider-image2.png" alt="slider-image">
-            </div>
-            <!--Слайд третий-->
-            <div class="item">
-                <img src="images/slider-image3.png" alt="slider-image">
-            </div>
+<header>
+    <ul class="nav-left">
+        <li>
+            <nav id="top-menu">
+                <div id="nav-btn"></div>
+                Меню
+            </nav>
+        </li>
+        <li>
+            <form id="form" class="search" name="poisk" method="get" action="/search">
+                <input type="submit" value="     " style="background: url(images/button-search.png) no-repeat"/>
+                <input type="text" value="Поиск"
+                       onfocus="this.value=this.value=='Поиск'?'':this.value;"
+                       onblur="this.value=this.value==''?'Поиск':this.value;" name="search">
+            </form>
+        </li>
+    </ul>
+    <ul class="nav-right">
+        <li id="sign-in"><a href="#">Войти на сайт</a></li>
+        <li id="basket"><a href="#">Корзина</a></li>
+        <li id="bookmarks"><a href="#">Закладки</a></li>
+    </ul>
+</header>
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <!-- Индикаторы для карусели -->
+    <ol class="carousel-indicators">
+        <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Слайды карусели -->
+    <div class="carousel-inner">
+        <!--Слайд первый-->
+        <div class="item active">
+            <img src="images/slider-image.png" alt="slider-image">
         </div>
-        <!-- Навигация для карусели -->
-        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+        <!--Слайд второй-->
+        <div class="item">
+            <img src="images/slider-image2.png" alt="slider-image">
+        </div>
+        <!--Слайд третий-->
+        <div class="item">
+            <img src="images/slider-image3.png" alt="slider-image">
+        </div>
     </div>
-    <nav id="middle-menu">
-        <ul class="second-menu">
-            <li><a href="#">Все товары</a></li>
-            <li><a href="#">Ключи и ПИН-коды</a></li>
-            <li><a href="#">Книги</a></li>
-            <li><a href="#">Програмное обеспечение</a></li>
-            <li><a href="#">Цифровые товары</a></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Информация</a></li>
-        </ul>
-    </nav>
-    <div class="products">
-        <table class="books">
-            <tr>
-                <th colspan="2" rowspan="2">
-                    <img src="images/book1.png" alt="book1">
-                    <div style="bottom: -297px">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th colspan="2">
-                    <img src="images/book2.png" alt="book2">
-                    <div style="bottom: 43px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th>
-                    <img src="images/book3.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book4.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book5.png" alt="">
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <img src="images/book6.png" alt="">
-                </th>
-                <th colspan="2">
-                    <img src="images/book7.png" alt="">
-                    <div style="bottom: -297px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th colspan="2" rowspan="2">
-                    <img src="images/book8.png" alt="">
-                    <div style="bottom: -637px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <img src="images/book9.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book10.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book11.png" alt="">
-                </th>
-                <th colspan="2">
-                    <img src="images/book12.png" alt="">
-                    <div style="bottom: -637px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-            </tr>
-        </table>
-    </div>
-    <div class="blue-block">
-        <a id="choose" href="#">Выбирайте</a>
-    </div>
-    <div class="products">
-        <table class="books">
-            <tr>
-                <th colspan="2">
-                    <img src="images/book7.png" alt="">
-                    <div style="bottom: -1357px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th>
-                    <img src="images/book6.png" alt="">
-                </th>
-                <th colspan="2">
-                    <img src="images/book2.png" alt="">
-                    <div style="bottom: -1357px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th colspan="2" rowspan="2">
-                    <img src="images/book1.png" alt="">
-                    <div style="bottom: -1697px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <img src="images/book12.png" alt="">
-                    <div style="bottom: -1697px;">
-                        <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
-                        <p class="price">449.99<span> руб</span></p>
-                        <a class="button-buy" href="#">Купить</a>
-                        <a class="bookmark" href="#" rel="sidebar"
-                           onclick="addBookmark()">В закладки</a>
-                    </div>
-                </th>
-                <th>
-                    <img src="images/book13.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book14.png" alt="">
-                </th>
-                <th>
-                    <img src="images/book15.png" alt="">
-                </th>
-            </tr>
-        </table>
-    </div>
+    <!-- Навигация для карусели -->
+    <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 </div>
+<nav id="middle-menu">
+    <ul class="second-menu">
+        <li><a href="#">Все товары</a></li>
+        <li><a href="#">Ключи и ПИН-коды</a></li>
+        <li><a href="#">Книги</a></li>
+        <li><a href="#">Програмное обеспечение</a></li>
+        <li><a href="#">Цифровые товары</a></li>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Информация</a></li>
+    </ul>
+</nav>
+<div class="products">
+    <table class="books">
+        <tr>
+            <th colspan="2" rowspan="2">
+                <img src="images/book1.png" alt="book1">
+                <div style="bottom: -297px">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()"><span>В закладки</span></a>
+                </div>
+            </th>
+            <th colspan="2">
+                <img src="images/book2.png" alt="book2">
+                <div style="bottom: 43px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+            <th>
+                <img src="images/book3.png" alt="">
+                <div class="small-block" style="bottom: 42px">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()"><span>В закладки</span></a>
+                </div>
+            </th>
+            <th>
+                <img src="images/book4.png" alt="">
+            </th>
+            <th>
+                <img src="images/book5.png" alt="">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <img src="images/book6.png" alt="">
+            </th>
+            <th colspan="2">
+                <img src="images/book7.png" alt="">
+                <div style="bottom: -297px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+            <th colspan="2" rowspan="2">
+                <img src="images/book8.png" alt="">
+                <div style="bottom: -637px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <img src="images/book9.png" alt="">
+            </th>
+            <th>
+                <img src="images/book10.png" alt="">
+            </th>
+            <th>
+                <img src="images/book11.png" alt="">
+            </th>
+            <th colspan="2">
+                <img src="images/book12.png" alt="">
+                <div style="bottom: -637px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+<div class="blue-block">
+    <a id="choose" href="#">Выбирайте</a>
+</div>
+<div class="products">
+    <table class="books">
+        <tr>
+            <th colspan="2">
+                <img src="images/book7.png" alt="">
+                <div style="bottom: -1357px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+            <th>
+                <img src="images/book6.png" alt="">
+            </th>
+            <th colspan="2">
+                <img src="images/book2.png" alt="">
+                <div style="bottom: -1357px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+            <th colspan="2" rowspan="2">
+                <img src="images/book1.png" alt="">
+                <div style="bottom: -1697px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <img src="images/book12.png" alt="">
+                <div style="bottom: -1697px;">
+                    <h4><a href="#">Взлом маркетинга.<br>Наука о том, почему мы покупаем</a></h4>
+                    <p class="price">449.99<span> руб</span></p>
+                    <a class="button-buy" href="#">Купить</a>
+                    <a class="bookmark" href="#" rel="sidebar"
+                       onclick="addBookmark()">В закладки</a>
+                </div>
+            </th>
+            <th>
+                <img src="images/book13.png" alt="">
+            </th>
+            <th>
+                <img src="images/book14.png" alt="">
+            </th>
+            <th>
+                <img src="images/book15.png" alt="">
+            </th>
+        </tr>
+    </table>
+</div>
+<div id="button-more" onclick="lazyload.load()">
+    <p class="show-more"><span>Показать еще</span></p>
+</div>
+<div id="scrollup">
+    <p class="button-up"><span>Наверх</span></p>
+</div>
+<hr align="center" />
+<footer>
+    <table class="lower-menu">
+        <tr>
+            <th>
+                <ul class="first-block">
+                    <li><a href="#">InfoSkills.ru 2016</a></li>
+                    <li><a href="#">+7 395 220-15-68</a></li>
+                    <li><a href="#">support@pokupo.ru</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </th>
+            <th>
+                <ul class="second-block">
+                    <li><a href="#">pokupo.ru</a></li>
+                    <li><a href="#">ICQ: 21511546151</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </th>
+            <th>
+                <ul class="third-block">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Как покупать</a></li>
+                    <li><a href="#">Как продавать</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </th>
+            <th>
+                <ul class="third-block">
+                    <li><a href="#">Ключи и пин-коды</a></li>
+                    <li><a href="#">Книги</a></li>
+                    <li><a href="#">Цифровые товары</a></li>
+                    <li><a href="#">Программное обеспечение</a></li>
+                    <li><a href="#">Обучение</a></li>
+                </ul>
+            </th>
+        </tr>
+    </table>
+</footer>
 </body>
 </html>

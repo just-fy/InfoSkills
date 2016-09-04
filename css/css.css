@@ -88,6 +88,12 @@ form#form {
     margin-right: 10px;
     cursor: pointer;
 }
+#nav-btn:hover {
+    display: inline-block;
+    content: url("../images/cross.png");
+    margin-right: 10px;
+    border: transparent;
+}
 /*Стили для слайдера*/
 
 .item {
@@ -147,10 +153,17 @@ th {
 }
 /*Стили для всплывающих блоков у книг*/
 .books div {
-    display: none;
+    /*display: none;*/
     background-color: rgba(0, 0, 0, 0.8);
     width: 460px;
     height: 193px;
+    position: absolute;
+    cursor: pointer;
+}
+.books .small-block {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 220px;
+    height: 235px;
     position: absolute;
     cursor: pointer;
 }
@@ -199,28 +212,40 @@ th {
     background: #06a2b8;
     text-decoration: none;
     border-bottom: none;
+    -webkit-border-bottom: none;
     color: #000000;
 }
-.bookmark {
-    font: 13px/20px 'PTSans', Arial;
+.bookmark span{
+    font: 11px 'PTSans', Arial;
     color: #ffffff;
     text-decoration: none;
     border-bottom: 1px solid #6f6151;
     margin-right: 140px;
-    padding-left: 20px;
-    position: relative;
-    top: 10px;
-    background: url("../images/white-bookmark.png") no-repeat;
 }
-.bookmark:hover {
+.bookmark a {
+    text-decoration: none;
+}
+.bookmark:before {
+    content: url("../images/white-bookmark.png");
+}
+.bookmark a:hover {
+    text-decoration: none;
+}
+.bookmark span:hover {
     text-decoration: none;
     border-bottom: none;
     color: #ffffff;
+    -webkit-border-bottom: none;
+    -webkit-text-decoration: none;
+    -webkit-color: #ffffff;
 }
 .bookmark:active {
     text-decoration: none;
     border-bottom: none;
     color: #ffffff;
+    -webkit-border-bottom: none;
+    -webkit-text-decoration: none;
+    -webkit-color: #ffffff;
 }
 /*Стили для синего блока*/
 .blue-block {
@@ -237,11 +262,69 @@ th {
     top: 260px;
     color: #62dcf4;
 }
-#choose::after {
+#choose:after {
     content: '';
     position: absolute;
     left: 90px;
     bottom: 4px;
     border: 4px solid transparent;
     border-left: 9px solid #62dcf4;
+}
+/*Кнопка показать еще*/
+#button-more {
+    display: inline-block;
+    margin-left: 960px;
+}
+.show-more {
+    display: inline-block;
+    font: 700 13px/20px 'PTSans', arial;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.show-more span {
+    padding: 10px;
+}
+.show-more:before {
+    content: url("../images/button-show-more.png");
+}
+/*Кнопка наверх*/
+#scrollup {
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+}
+.button-up {
+    display: inline-block;
+    font: 700 13px/20px 'PTSans', arial;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button-up span {
+    padding: 9px;
+}
+#scrollup:after {
+    content: url("../images/up.png");
+}
+/*горизонтальная линия*/
+hr {
+    width: 1661px;
+    height: 2px;
+    background-color: #efece7;
+    margin-left: 140px;
+}
+/*FOOTER*/
+/*Нижнее меню*/
+
+.first-block li, .second-block li, .third-block li{
+    list-style-type: none;
+    text-align: left;
+}
+.third-block a {
+    text-decoration: none;
+    font: 700 13px/25px 'PTSans', arial;
+    color: #666666;
 }

@@ -318,10 +318,25 @@ hr {
 }
 /*FOOTER*/
 /*Нижнее меню*/
-
+.lower-menu {
+    margin-left: 140px;
+}
 .first-block li, .second-block li, .third-block li{
     list-style-type: none;
     text-align: left;
+}
+.first-block {
+    margin-right: 109px;
+}
+.second-block {
+    margin-right: 90px;
+}
+.third-block {
+    margin-right: 120px;
+}
+.lower-menu th {
+    height: 70px;
+    width: 133px;
 }
 .third-block a {
     text-decoration: none;

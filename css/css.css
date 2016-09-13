@@ -320,24 +320,33 @@ hr {
 /*Нижнее меню*/
 .lower-menu {
     margin-left: 140px;
+    width: 880px;
 }
+.lower-menu li {
+    padding-left: 20px;
+    width: 15px;
+    height: 15px;
+    background: url("../images/sprite.png");
+}
+
 .first-block li, .second-block li, .third-block li{
     list-style-type: none;
     text-align: left;
 }
 .first-block {
+    width: 133px;
     margin-right: 109px;
 }
 .second-block {
-    margin-right: 90px;
+    width: 122px;
+    margin-right: 115px;
 }
-.third-block {
-    margin-right: 120px;
+ul.third-block {
+    margin-right: 65px;
+    width: 180px;
+    word-wrap: normal;
 }
-.lower-menu th {
-    height: 70px;
-    width: 133px;
-}
+
 .third-block a {
     text-decoration: none;
     font: 700 13px/25px 'PTSans', arial;
